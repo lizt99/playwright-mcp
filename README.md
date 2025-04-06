@@ -305,3 +305,7 @@ Vision Mode provides tools for visual-based interactions using screenshots. Here
 - **browser_close**
   - Description: Close the page
   - Parameters: None
+
+
+
+node cli.js --cdp-endpoint=http://localhost:9222 --port 8931

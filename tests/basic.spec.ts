@@ -366,3 +366,12 @@ test('executable path', async ({ startClient }) => {
   });
   expect(response).toContainTextContent(`executable doesn't exist`);
 });
+
+test('navigate to baidu', async ({ client }) => {
+  expect(await client.callTool({
+    name: 'browser_navigate',
+    arguments: {
+      url: 'https://www.baidu.com'
+    }
+  }))
+});
