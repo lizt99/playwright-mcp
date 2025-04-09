@@ -308,4 +308,6 @@ Vision Mode provides tools for visual-based interactions using screenshots. Here
 
 
 
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --remote-debugging-address=0.0.0.0
+
 node cli.js --cdp-endpoint=http://localhost:9222 --port 8931

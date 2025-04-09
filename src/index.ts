@@ -18,6 +18,8 @@ import { createServerWithTools } from './server';
 import * as snapshot from './tools/snapshot';
 import * as common from './tools/common';
 import * as screenshot from './tools/screenshot';
+import * as rstsoft from './tools/rstsoft';
+import * as reddit from './tools/reddithelper';
 import { console } from './resources/console';
 
 import type { Tool } from './tools/tool';
@@ -44,6 +46,8 @@ const snapshotTools: Tool[] = [
   snapshot.type,
   snapshot.selectOption,
   snapshot.screenshot,
+  rstsoft.mspbotsNav(true),
+  reddit.redditNav(true),
   ...commonTools,
 ];
 
@@ -57,6 +61,8 @@ const screenshotTools: Tool[] = [
   screenshot.click,
   screenshot.drag,
   screenshot.type,
+  rstsoft.mspbotsNav(false),
+  reddit.redditNav(false),
   ...commonTools,
 ];
 
