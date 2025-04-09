@@ -48,6 +48,7 @@ const snapshotTools: Tool[] = [
   snapshot.screenshot,
   rstsoft.mspbotsNav(true),
   reddit.redditNav(true),
+  reddit.redditSearch(true),
   ...commonTools,
 ];
 
@@ -63,6 +64,7 @@ const screenshotTools: Tool[] = [
   screenshot.type,
   rstsoft.mspbotsNav(false),
   reddit.redditNav(false),
+  reddit.redditSearch(false),
   ...commonTools,
 ];
 
