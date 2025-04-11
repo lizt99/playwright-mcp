@@ -19,7 +19,7 @@
       "runtimeExecutable": "node",
       "runtimeArgs": ["--inspect-brk"],
       "program": "${workspaceFolder}/cli.js",
-      "args": [],
+      "args": ["--cdp-endpoint", "http://localhost:9222", "--port", "8931"],
       "console": "integratedTerminal",
       "skipFiles": [
         "<node_internals>/**"
